@@ -214,6 +214,18 @@ GHADS/
 ├── manifest.mf
 ├── lib/
 │   └── mysql-connector-j-9.7.0.jar
+├── screenshots/
+│   ├── login.png
+│   ├── admin-dashboard.png
+│   ├── coordinator-dashboard.png
+│   ├── organization-management.png
+│   ├── user-management.png
+│   ├── family-management.png
+│   ├── aid-distribution-management.png
+│   ├── aid-distribution-form.png
+│   ├── profile.png
+│   ├── change-password.png
+│   └── about-dialog.png
 ├── src/
 │   ├── app/Main.java
 │   ├── config/DBConnection.java, SessionManager.java
