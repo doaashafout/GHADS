@@ -2,7 +2,7 @@
 
 **Course:** Programming III Lab — CSCI 2108  
 **Instructor:** Aya N. Alharazin  
-**Student:** Doaa Raed Shehada Shafout — 220213922  
+**Student:** Doaa Raed Shehada Shafout   
 **University:** Islamic University of Gaza  
 
 ---
