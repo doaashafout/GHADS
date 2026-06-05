@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="600" prefWidth="950" styleClass="root" stylesheets="@../styles/FormStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AidDistributionFormController">
+
+    <top>
+        <AnchorPane>
+            <MenuBar fx:id="menubar" styleClass="menu-bar" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+                <menus>
+                    <Menu text="File"><items><MenuItem fx:id="exit" onAction="#exitHandle" text="Exit" /></items></Menu>
+                    <Menu text="Format">
+                        <items>
+                            <Menu text="Font Size">
+                                <items>
+                                    <RadioMenuItem text="Small"><toggleGroup><ToggleGroup fx:id="tg" /></toggleGroup></RadioMenuItem>
+                                    <RadioMenuItem selected="true" text="Medium" toggleGroup="$tg" />
+                                    <RadioMenuItem text="Large" toggleGroup="$tg" />
+                                </items>
+                            </Menu>
+                            <Menu text="Font Family">
+                                <items>
+                                    <RadioMenuItem selected="true" text="Arial"><toggleGroup><ToggleGroup fx:id="tg2" /></toggleGroup></RadioMenuItem>
+                                    <RadioMenuItem text="Times New Roman" toggleGroup="$tg2" />
+                                </items>
+                            </Menu>
+                        </items>
+                    </Menu>
+                    <Menu text="Help"><items><MenuItem fx:id="about" onAction="#aboutHandle" text="About App" /></items></Menu>
+                </menus>
+            </MenuBar>
+        </AnchorPane>
+    </top>
+
+    <left>
+        <VBox spacing="15" styleClass="sidebar" prefWidth="320">
+            <padding><Insets bottom="20" left="20" right="20" top="20" /></padding>
+
+            <Label styleClass="section-label" text="RECORD AID DISTRIBUTION" />
+
+            <Separator />
+
+            <Label styleClass="field-label" text="Select Family" />
+            <ComboBox fx:id="familyCombo" promptText="Choose a family..." styleClass="input" />
+            <Label fx:id="vulnerabilityLabel" styleClass="field-label" text="" />
+
+            <Label styleClass="field-label" text="Aid Type" />
+            <ComboBox fx:id="aidTypeCombo" promptText="Select aid type..." styleClass="input" />
+
+            <Label styleClass="field-label" text="Distribution Date" />
+            <DatePicker fx:id="distDatePicker" styleClass="input" />
+
+            <Separator />
+
+            <Button fx:id="distributeButton" onAction="#distributeHandle" prefHeight="40" styleClass="btn-primary" text="Record Distribution" />
+
+            <HBox spacing="8">
+                <Button fx:id="resetButton" onAction="#resetHandle" styleClass="btn-secondary" text="Reset" />
+                <Button fx:id="refreshButton" onAction="#refreshHandle" styleClass="btn-outline" text="Refresh" />
+                <Button fx:id="backButton" onAction="#backHandle" styleClass="btn-nav" text="Back" />
+            </HBox>
+
+        </VBox>
+    </left>
+
+    <center>
+        <VBox spacing="15">
+            <padding><Insets bottom="15" left="15" right="15" top="15" /></padding>
+
+            <Label styleClass="section-title" text="Families by Vulnerability Priority" />
+            <ListView fx:id="vulnerableListView" prefHeight="200" />
+            <Label fx:id="vulnerableCount" styleClass="status-muted" text="0 families" />
+
+            <Separator />
+
+            <Label styleClass="section-title" text="Families Not Yet Served" />
+            <ListView fx:id="notServedListView" prefHeight="200" />
+            <Label fx:id="notServedCount" styleClass="status-muted" text="0 families" />
+
+            <Separator />
+
+            <Label styleClass="section-title" text="Your Organization's Distributions" />
+            <TableView fx:id="distTable" prefHeight="300" styleClass="custom-table">
+                <columns>
+                    <TableColumn fx:id="distFamilyTC" prefWidth="150" text="Family" />
+                    <TableColumn fx:id="distVulnTC" prefWidth="90" text="Vulnerability" />
+                    <TableColumn fx:id="distAidTypeTC" prefWidth="100" text="Aid Type" />
+                    <TableColumn fx:id="distDateTC" prefWidth="100" text="Date" />
+                </columns>
+            </TableView>
+
+        </VBox>
+    </center>
+
+</BorderPane>

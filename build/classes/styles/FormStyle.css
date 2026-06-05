@@ -1,0 +1,184 @@
+/* ========================= */
+/* FORM STYLES */
+/* ========================= */
+.root {
+    -fx-background-color: #f0f2f5;
+}
+
+.menu-bar {
+    -fx-background-color: white;
+    -fx-border-color: #dee2e6;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 5 10;
+}
+
+.menu:hover {
+    -fx-background-color: #e8eaf6;
+}
+
+.menu-item:focused {
+    -fx-background-color: #283593;
+}
+
+/* ========================= */
+/* SIDEBAR */
+/* ========================= */
+.sidebar {
+    -fx-background-color: white;
+    -fx-border-color: #dee2e6;
+    -fx-border-width: 0 1 0 0;
+}
+
+.section-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1a237e;
+}
+
+.section-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.field-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #555;
+}
+
+.input {
+    -fx-pref-width: 260;
+    -fx-pref-height: 30;
+    -fx-background-color: #f5f5f5;
+    -fx-background-radius: 5;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 5;
+    -fx-padding: 3 8;
+}
+
+.input:focused {
+    -fx-border-color: #283593;
+    -fx-background-color: white;
+}
+
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
+.btn-primary {
+    -fx-background-color: #1565c0;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #0d47a1;
+}
+
+.btn-success {
+    -fx-background-color: #2e7d32;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+
+.btn-success:hover {
+    -fx-background-color: #1b5e20;
+}
+
+.btn-danger {
+    -fx-background-color: #c62828;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+
+.btn-danger:hover {
+    -fx-background-color: #b71c1c;
+}
+
+.btn-secondary {
+    -fx-background-color: #546e7a;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #37474f;
+}
+
+.btn-outline {
+    -fx-background-color: transparent;
+    -fx-text-fill: #283593;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-border-color: #283593;
+    -fx-border-radius: 6;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+
+.btn-outline:hover {
+    -fx-background-color: #e8eaf6;
+}
+
+.btn-nav {
+    -fx-background-color: #283593;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+
+.btn-nav:hover {
+    -fx-background-color: #1a237e;
+}
+
+/* ========================= */
+/* TABLE */
+/* ========================= */
+.custom-table {
+    -fx-background-color: white;
+    -fx-border-color: #dee2e6;
+    -fx-border-radius: 5;
+}
+
+.custom-table .column-header {
+    -fx-background-color: #283593;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.custom-table .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.custom-table .table-row-cell:odd {
+    -fx-background-color: #f5f5f5;
+}
+
+.custom-table .table-row-cell:selected {
+    -fx-background-color: #c5cae9;
+}
+
+.status-muted {
+    -fx-font-size: 12px;
+    -fx-text-fill: #888;
+}

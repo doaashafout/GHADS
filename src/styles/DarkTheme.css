@@ -1,0 +1,84 @@
+/* ========================= */
+/* DARK THEME */
+/* ========================= */
+.root {
+    -fx-background-color: #1e1e1e !important;
+}
+
+.menu-bar, .sidebar, .top-container {
+    -fx-background-color: #2d2d2d !important;
+    -fx-border-color: #444 !important;
+}
+
+.label, .field-label, .section-label, .section-title {
+    -fx-text-fill: #e0e0e0 !important;
+}
+
+.welcome-text {
+    -fx-text-fill: #bbdefb !important;
+}
+
+.stat-number {
+    -fx-text-fill: #90caf9 !important;
+}
+
+.stat-label {
+    -fx-text-fill: #bbb !important;
+}
+
+.stat-card {
+    -fx-background-color: #2d2d2d !important;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 2) !important;
+}
+
+.input, .input-field, .combo-box, .date-picker {
+    -fx-background-color: #333 !important;
+    -fx-border-color: #555 !important;
+    -fx-text-fill: #e0e0e0 !important;
+}
+
+.input:focused, .input-field:focused {
+    -fx-border-color: #90caf9 !important;
+}
+
+.custom-table {
+    -fx-background-color: #2d2d2d !important;
+    -fx-border-color: #444 !important;
+}
+
+.custom-table .column-header {
+    -fx-background-color: #1a237e !important;
+}
+
+.custom-table .table-row-cell {
+    -fx-background-color: #333 !important;
+    -fx-text-fill: #e0e0e0 !important;
+}
+
+.custom-table .table-row-cell:odd {
+    -fx-background-color: #383838 !important;
+}
+
+.custom-table .table-row-cell:selected {
+    -fx-background-color: #3949ab !important;
+}
+
+.custom-table .table-cell {
+    -fx-text-fill: #e0e0e0 !important;
+}
+
+.content-area {
+    -fx-background-color: #1e1e1e !important;
+}
+
+.separator {
+    -fx-background-color: #444 !important;
+}
+
+.menu .label, .menu-item .label {
+    -fx-text-fill: #e0e0e0 !important;
+}
+
+.menu-item:focused {
+    -fx-background-color: #1a237e !important;
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="600" prefWidth="900" styleClass="root" stylesheets="@../styles/FormStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FamilyController">
+
+    <top>
+        <AnchorPane>
+            <MenuBar fx:id="menubar" styleClass="menu-bar" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+                <menus>
+                    <Menu text="File"><items><MenuItem fx:id="exit" onAction="#exitHandle" text="Exit" /></items></Menu>
+                    <Menu text="Format">
+                        <items>
+                            <Menu text="Font Size">
+                                <items>
+                                    <RadioMenuItem text="Small"><toggleGroup><ToggleGroup fx:id="tg" /></toggleGroup></RadioMenuItem>
+                                    <RadioMenuItem selected="true" text="Medium" toggleGroup="$tg" />
+                                    <RadioMenuItem text="Large" toggleGroup="$tg" />
+                                </items>
+                            </Menu>
+                            <Menu text="Font Family">
+                                <items>
+                                    <RadioMenuItem selected="true" text="Arial"><toggleGroup><ToggleGroup fx:id="tg2" /></toggleGroup></RadioMenuItem>
+                                    <RadioMenuItem text="Times New Roman" toggleGroup="$tg2" />
+                                </items>
+                            </Menu>
+                        </items>
+                    </Menu>
+                    <Menu text="Help"><items><MenuItem fx:id="about" onAction="#aboutHandle" text="About App" /></items></Menu>
+                </menus>
+            </MenuBar>
+        </AnchorPane>
+    </top>
+
+    <left>
+        <VBox spacing="15" styleClass="sidebar" prefWidth="300">
+            <padding><Insets bottom="20" left="20" right="20" top="20" /></padding>
+
+            <Label styleClass="section-label" text="FAMILY MANAGEMENT" />
+
+            <Separator />
+
+            <Label styleClass="field-label" text="Household Name" />
+            <TextField fx:id="householdNameField" promptText="Family name" styleClass="input" />
+
+            <Label styleClass="field-label" text="National ID" />
+            <TextField fx:id="nationalIdField" promptText="Unique national ID" styleClass="input" />
+
+            <Label styleClass="field-label" text="Phone" />
+            <TextField fx:id="phoneField" promptText="Phone number" styleClass="input" />
+
+            <Label styleClass="field-label" text="Location" />
+            <TextField fx:id="locationField" promptText="Location in Gaza" styleClass="input" />
+
+            <Label styleClass="field-label" text="Family Size" />
+            <TextField fx:id="familySizeField" promptText="Number of members" styleClass="input" />
+
+            <Label styleClass="field-label" text="Vulnerability Level" />
+            <ComboBox fx:id="vulnCombo" promptText="Select level" styleClass="input" />
+
+            <Label styleClass="field-label" text="Registration Date" />
+            <DatePicker fx:id="regDatePicker" styleClass="input" />
+
+            <Separator />
+
+            <HBox spacing="8">
+                <Button fx:id="addButton" onAction="#addHandle" styleClass="btn-primary" text="Add" />
+                <Button fx:id="updateButton" onAction="#updateHandle" styleClass="btn-success" text="Update" />
+                <Button fx:id="deleteButton" onAction="#deleteHandle" styleClass="btn-danger" text="Delete" />
+            </HBox>
+
+            <HBox spacing="8">
+                <Button fx:id="resetButton" onAction="#resetHandle" styleClass="btn-secondary" text="Reset" />
+                <Button fx:id="refreshButton" onAction="#refreshHandle" styleClass="btn-outline" text="Refresh" />
+                <Button fx:id="backButton" onAction="#backHandle" styleClass="btn-nav" text="Back" />
+            </HBox>
+
+        </VBox>
+    </left>
+
+    <center>
+        <TableView fx:id="table" styleClass="custom-table">
+            <columns>
+                <TableColumn fx:id="familyIdTC" prefWidth="50" text="ID" />
+                <TableColumn fx:id="nameTC" prefWidth="120" text="Name" />
+                <TableColumn fx:id="nationalIdTC" prefWidth="100" text="National ID" />
+                <TableColumn fx:id="phoneTC" prefWidth="100" text="Phone" />
+                <TableColumn fx:id="locationTC" prefWidth="120" text="Location" />
+                <TableColumn fx:id="sizeTC" prefWidth="60" text="Size" />
+                <TableColumn fx:id="vulnTC" prefWidth="80" text="Vulnerability" />
+                <TableColumn fx:id="dateTC" prefWidth="100" text="Reg Date" />
+            </columns>
+        </TableView>
+    </center>
+
+</BorderPane>
