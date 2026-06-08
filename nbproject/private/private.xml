@@ -3,29 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/controllers/AidDistributionController.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/dao/AidDistributionDAO.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/models/AidDistribution.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/controllers/ChangePasswordController.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/dao/UserDAO.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/services/AuthService.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/controllers/UserController.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/config/DBConnection.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/controllers/AidDistributionFormController.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/controllers/OrganizationController.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/config/SessionManager.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/controllers/AdminDashboardController.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/controllers/ProfileController.java</file>
             <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/app/Main.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/dao/FamilyDAO.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/dao/OrganizationDAO.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/models/Organization.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/controllers/CoordinatorDashboardController.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/models/User.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/controllers/FamilyController.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/services/DistributionService.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/models/Family.java</file>
-            <file>file:/C:/Users/Doaa/Documents/NetBeansProjects/GHADS/src/controllers/LoginController.java</file>
         </group>
     </open-files>
 </project-private>
